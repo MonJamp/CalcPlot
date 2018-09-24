@@ -4,6 +4,7 @@
 
 #include "CrossPlot/Settings.h"
 #include "TipsWindow.h"
+#include "Graph_2D_Window.h"
 
 class QString;
 class MainWindow;
@@ -52,5 +53,6 @@ private:
 
 	MainWindowSettings* settings;
 	TipsWindow* tips_window;
+	Graph_2D_Window* graph_2d_window;
 
 };

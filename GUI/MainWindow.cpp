@@ -93,6 +93,8 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 
 void MainWindow::graph_2d()
 {
+	graph_2d_window = new Graph_2D_Window();
+	graph_2d_window->show();
 }
 
 void MainWindow::graph_3d()

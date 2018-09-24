@@ -13,6 +13,7 @@ set(CXX_SRCS
   main.cpp
   GUI/MainWindow.cpp
   GUI/TipsWindow.cpp
+  GUI/Graph_2D_Window.cpp
 )
 
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG -g -Og -Wall -Wextra")
