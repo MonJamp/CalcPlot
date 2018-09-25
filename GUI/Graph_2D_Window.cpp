@@ -13,6 +13,9 @@
 
 Graph_2D_Window::Graph_2D_Window()
 {
+	glWidget = new GLWidget();
+	setCentralWidget(glWidget);
+	
 	this->move(100, 100);
 	this->resize(200, 200);
 	
