@@ -22,7 +22,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DDEBUG -g -Og -Wall -Wextra
 set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -DRELEASE -O2 -Wall -Wextra -Werror")
 
 add_executable(CalcPlot ${CXX_SRCS})
-target_link_libraries(CalcPlot Qt5::Widgets Qt5::Gui ${Boost_LIBRARIES})
+target_link_libraries(CalcPlot Qt5::Widgets Qt5::Gui Boost::regex)
 
 #Copy QT dll files to binary directory
 add_custom_command(
@@ -31,5 +31,6 @@ add_custom_command(
         $<TARGET_FILE:Qt5::Widgets>
         $<TARGET_FILE:Qt5::Gui>
         $<TARGET_FILE:Qt5::Core>
+        $<TARGET_FILE:Boost::regex>
         $<TARGET_FILE_DIR:CalcPlot>
 )
